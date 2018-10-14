@@ -1,0 +1,53 @@
+.CodeWindow {
+  position: relative;
+  width: 100%;
+  &__Header {
+    box-sizing: border-box;
+    color: rgb(69, 45, 45);
+    background-color: rgb(225, 223, 225);
+    font-family: monaco, Consolas, 'Lucida Console', monospace;
+    font-size: 16px;
+    padding-bottom: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__Buttons {
+      position: absolute;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 15px;
+      text-align: center;
+      @mixin button($color) {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $color;
+        margin-right: 7px;
+      };
+      &__Red {
+        @include button(rgb(252, 100, 95));
+      }
+      &__Yellow {
+        @include button(rgb(253, 191, 65));
+      }
+      &__Green {
+        @include button(rgb(54, 206, 76));
+      }
+      &__Icon {
+        display: none;
+        font-weight: 600;
+        font-size: 12px;
+        color: rgba(0,0,0,0.5);
+        cursor: default;
+        line-height: 14px;
+      }
+      &:hover .CodeWindow__Header__Buttons__Icon {
+        display: inherit;
+      }
+    }
+  }
+}

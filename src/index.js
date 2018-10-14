@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './lib/serviceWorker';
+import './index.css';
+
+// For material-ui: https://material-ui.com/style/typography/#general
+import 'typeface-roboto';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

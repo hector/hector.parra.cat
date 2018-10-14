@@ -1,0 +1,23 @@
+.IndexPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  &__Subtitle {
+    margin-bottom: 50px;
+  }
+  &__Code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    &__Window {
+      //width: 200px;
+      pre {
+        font-size: 18pt;
+      }
+    }
+  }
+}
