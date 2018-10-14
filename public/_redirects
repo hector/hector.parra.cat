@@ -1,0 +1,5 @@
+# Support pushState
+/*  /index.html  200
+
+# Redirect default Netlify subdomain to primary domain
+https://hectorparra.netlify.com/* https://hector.parra.cat/:splat 301!
