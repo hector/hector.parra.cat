@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 
 import './IndexPage.scss';
 import CodeWindow from '../../components/CodeWindow/CodeWindow';
+import Particles from '../../components/Particles/Particles';
 
 const code = `
 export default class {
@@ -41,11 +42,14 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <div className="IndexPage">
-        <Typography variant='h1' className="IndexPage__Name">Hector Parra</Typography>
-        <Typography variant='h3' className="IndexPage__Subtitle">I'm a freelance programmer</Typography>
-        <div className="IndexPage__Code">
-          <Typography variant='h6'>Check my source code</Typography>
-          <CodeWindow title='HectorParra.js' className="IndexPage__Code__Window">{code}</CodeWindow>
+        <Particles className="IndexPage__Particles"/>
+        <div className="IndexPage__Content">
+          <Typography variant='h1'>Hector Parra</Typography>
+          <Typography variant='h3'>I'm a freelance programmer</Typography>
+          <div className="IndexPage__Content__Code">
+            <Typography variant='h6'>Check my source code</Typography>
+            <CodeWindow title='HectorParra.js' className="IndexPage__Content__Code__Window">{code}</CodeWindow>
+          </div>
         </div>
       </div>
     );

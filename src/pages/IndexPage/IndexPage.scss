@@ -1,22 +1,28 @@
 .IndexPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px;
-  &__Subtitle {
-    margin-bottom: 50px;
+  &__Particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
-  &__Code {
+  &__Content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 50px;
-    &__Window {
-      //width: 200px;
-      pre {
-        font-size: 18pt;
+    padding: 50px;
+    padding: 50px;
+    &__Code {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      &__Window {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+        margin-top: 10px;
+        pre {
+          font-size: 16pt;
+        }
       }
     }
   }
