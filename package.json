@@ -5,7 +5,9 @@
   "dependencies": {
     "@material-ui/core": "^3.2.0",
     "@material-ui/icons": "^3.0.1",
+    "@material-ui/lab": "^3.0.0-alpha.27",
     "classnames": "^2.2.6",
+    "isotope-layout": "^3.0.6",
     "particles.js": "^2.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",

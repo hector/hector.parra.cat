@@ -10,7 +10,7 @@ import './CodeWindow.scss';
 
 registerLanguage('javascript', js);
 
-export default class CodeWindow extends React.Component {
+export default class CodeWindow extends React.PureComponent {
 
   static defaultProps = {
     title: 'react-code-window',
@@ -37,7 +37,7 @@ export default class CodeWindow extends React.Component {
               <span className="CodeWindow__Header__Buttons__Icon">&#43;</span>
             </div>
           </span>
-          <span>{title}</span>
+          <span className="CodeWindow__Title">{title}</span>
         </div>
         <SyntaxHighlighter
           customStyle={{margin: 0, width: '100%'}}

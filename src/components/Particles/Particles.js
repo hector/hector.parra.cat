@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import 'particles.js';
 
+import './Particles.scss';
 import config from './Particles.json';
 
-export default class Particles extends React.Component {
+export default class Particles extends React.PureComponent {
 
   static propTypes = {
     className: PropTypes.string,

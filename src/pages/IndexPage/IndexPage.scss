@@ -1,30 +1,50 @@
 .IndexPage {
-  &__Particles {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  @mixin section() {
+    @media (max-width: 600px) {
+      padding: 50px 15px;
+    }
+    @media (min-width: 600px) {
+      padding: 50px;
+    }
   }
-  &__Content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-    &__Code {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      margin-top: 50px;
-      &__Window {
-        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
-        margin-top: 10px;
-        pre {
-          font-size: 16pt;
+  &__Hector {
+    @include section();
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 13vw !important;
+      }
+      h3 {
+        font-size: 6vw !important;
+      }
+      h6 {
+        font-size: 2.5vw !important;
+      }
+    }
+    &__CodeContainer {
+      padding: 50px 0;
+      &__Item {
+        flex-basis: 0 !important;
+        &__Window {
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+          margin-top: 10px;
+          pre {
+            font-size: 2vw;
+            @media (min-width: 992px) {
+              font-size: 16pt;
+            }
+          }
+          .CodeWindow__Title {
+            @media (max-width: 300px) {
+              color: transparent;
+            }
+          }
         }
       }
     }
+  }
+  &__Projects {
+    @include section();
+    background-color: #eee;
+    z-index: 1;
   }
 }
