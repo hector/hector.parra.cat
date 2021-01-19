@@ -45,6 +45,7 @@
   &__Projects {
     @include section();
     background-color: #eee;
+    padding-bottom: 10px !important;
     z-index: 1;
   }
 }

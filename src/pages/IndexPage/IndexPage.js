@@ -49,6 +49,9 @@ export default class IndexPage extends React.PureComponent {
               <Typography variant='h3' align="center" gutterBottom>Projects</Typography>
             </Grid>
             <ProjectsGrid />
+            <Grid item xs={12}>
+              <Typography align="center">© {(new Date()).getUTCFullYear()} Minairons OÜ</Typography>
+            </Grid>
           </Grid>
         </MuiThemeProvider>
       </Grid>
