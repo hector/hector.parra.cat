@@ -50,7 +50,7 @@ export default class IndexPage extends React.PureComponent {
             </Grid>
             <ProjectsGrid />
             <Grid item xs={12}>
-              <Typography align="center">© {(new Date()).getUTCFullYear()} Minairons OÜ</Typography>
+              <Typography align="center">© {(new Date()).getUTCFullYear()} Hector Parra</Typography>
             </Grid>
           </Grid>
         </MuiThemeProvider>
