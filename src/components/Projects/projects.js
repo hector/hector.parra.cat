@@ -29,6 +29,30 @@ import voting_bot from './img/voting_bot.jpg';
 
 export default [
   {
+    title: 'Vocloud',
+    image: vocloud,
+    imageCentered: true,
+    filter: 'professional',
+    summary: 'Webservice that runs voice and music technologies',
+    description: (
+      <span>
+        <strong>Description</strong>:
+        Vocloud is a webservice that makes <a href="https://www.voiceful.io">Voiceful</a> music and audio
+        technologies available online as a SaaS.
+        <br/>
+        <strong>My role</strong>: Full-stack (responsible of all the web related aspects)<br/>
+        <strong>Back-end techs</strong>: Rails API, Resque, Devise, Paperclip, RailsAdmin, RSpec, Swagger,
+        Postgresql, Redis<br/>
+        <strong>Devops techs</strong>: AWS EC2, AWS S3, S3-fuse, Nginx, Unicorn, Capistrano, God.rb, Whenever, Let's Encrypt<br/>
+        <strong>Years</strong>: 2016 - current<br/>
+        <strong>Type</strong>: Professional<br/>
+        <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
+        <strong>Links</strong>: <a href="https://cloud.voctrolabs.com/docs/api/index.html">API docs</a>
+        ,&nbsp;<a href="https://www.voiceful.io/developers.html">Ask for access</a>
+      </span>
+    )
+  },  
+  {
     title: 'Voiceful Studio',
     image: voiceful_studio,
     imageCentered: true,
@@ -46,7 +70,7 @@ export default [
         <strong>Back-end techs</strong>: Rails API, Graphiti-api, Devise, Active Storage, Postgresql<br/>
         <strong>Front-end techs</strong>: Create-react-app, Mobx, Spraypaint.js, Reactstrap<br/>
         <strong>Devops techs</strong>: AWS EC2, AWS S3, Nginx, Puma, Capistrano, God.rb, Whenever, Let's Encrypt<br/>
-        <strong>Years</strong>: 2018 - current<br/>
+        <strong>Years</strong>: 2018 - 2020<br/>
         <strong>Type</strong>: Professional<br/>
         <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
         <strong>Links</strong>: <a href="https://studio.voiceful.io">Web</a>,&nbsp;
@@ -69,36 +93,12 @@ export default [
         <br/>
         <strong>My role</strong>: Front-end<br/>
         <strong>Techs</strong>: Plain HTML+CSS, jQuery, Twitter Bootstrap, some pages with React<br/>
-        <strong>Years</strong>: 2017 - current<br/>
+        <strong>Years</strong>: 2017 - 2018<br/>
         <strong>Type</strong>: Professional<br/>
         <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
         <strong>Links</strong>: <a href="https://www.voiceful.io">Web</a>
         ,&nbsp;<a href="https://www.voiceful.io/demos.html">Demos</a>
         ,&nbsp;<a href="https://github.com/VoctroLabs/voiceful.io">Source code</a>
-      </span>
-    )
-  },
-  {
-    title: 'Vocloud',
-    image: vocloud,
-    imageCentered: true,
-    filter: 'professional',
-    summary: 'Webservice that runs voice and music technologies',
-    description: (
-      <span>
-        <strong>Description</strong>:
-        Vocloud is a webservice that makes <a href="https://www.voiceful.io">Voiceful</a> music and audio
-        technologies available online as a SaaS.
-        <br/>
-        <strong>My role</strong>: Full-stack (responsible of all the web related aspects)<br/>
-        <strong>Back-end techs</strong>: Rails API, Resque, Devise, Paperclip, RailsAdmin, RSpec, Swagger,
-        Postgresql, Redis<br/>
-        <strong>Devops techs</strong>: AWS EC2, AWS S3, S3-fuse, Nginx, Unicorn, Capistrano, God.rb, Whenever, Let's Encrypt<br/>
-        <strong>Years</strong>: 2016 - current<br/>
-        <strong>Type</strong>: Professional<br/>
-        <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
-        <strong>Links</strong>: <a href="https://cloud.voctrolabs.com/docs/api/index.html">API docs</a>
-        ,&nbsp;<a href="https://www.voiceful.io/developers.html">Ask for access</a>
       </span>
     )
   },
