@@ -24,7 +24,7 @@ export default class IndexPage extends React.PureComponent {
           <Grid item xs={12}>
             <Typography variant="h3" align="center">
               <Typed
-                strings={["I'm a freelance programmer"]}
+                strings={["I'm a full-stack programmer"]}
                 startDelay={2000}
                 backDelay={4000}
                 typeSpeed={40}
