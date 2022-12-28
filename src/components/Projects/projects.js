@@ -1,6 +1,7 @@
 import React from 'react';
 
 import armonia from './img/armonia.png';
+import cantamus from './img/cantamus.svg';
 import crypto_tops from './img/crypto_tops.png';
 import cube_orchestra from './img/cube_orchestra.png';
 import depuracion_sanguinea from './img/depuracion_sanguinea.png';
@@ -14,8 +15,10 @@ import mtf from './img/mtf.jpg';
 import oval from './img/oval.jpg';
 import partylisto from './img/partylisto.png';
 import plan_b from './img/plan_b.jpg';
+import pronto from "./img/pronto.png";
 import rakuten_tv from './img/rakuen_tv.png';
 import renfe from './img/renfe.png';
+import travelsax from "./img/travelsax.png";
 import sharon from './img/sharon.jpg';
 import sonard from './img/sonard.jpg';
 import stock_charts from './img/stock_charts.png';
@@ -29,6 +32,31 @@ import voting_bot from './img/voting_bot.jpg';
 
 export default [
   {
+    title: 'Cantāmus',
+    image: cantamus,
+    imageCentered: false,
+    filter: 'professional',
+    summary: 'Create practice tracks from any score for choral ensembles',
+    description: (
+      <span>
+        <strong>Description</strong>:
+        Cantāmus is a website for choral ensembles. They can upload a score in MusicXML format, it will get synthesized 
+        and they will be able to listen to it. Besides, the singers can record their voice while listening to it and 
+        get feedback on how was their performance.
+        Music technologies are run on a separate cloud webservice (Vocloud) in which I am also involved.
+        <br/>
+        <strong>My role</strong>: Full-stack<br/>
+        <strong>Front-end techs</strong>: React (CRA), Antd, Mobx, Apollo, GraphQL, Verovio<br/>
+        <strong>Back-end techs</strong>: Netlify Lambdas, Hasura, Postgresql<br/>
+        <strong>Devops techs</strong>: Netlify<br/>
+        <strong>Years</strong>: 2018 - Current<br/>
+        <strong>Type</strong>: Professional<br/>
+        <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
+        <strong>Links</strong>: <a href="https://cantamus.app/">Web</a>
+      </span>
+    )
+  },
+  {
     title: 'Vocloud',
     image: vocloud,
     imageCentered: true,
@@ -40,18 +68,67 @@ export default [
         Vocloud is a webservice that makes <a href="https://www.voiceful.io">Voiceful</a> music and audio
         technologies available online as a SaaS.
         <br/>
-        <strong>My role</strong>: Full-stack (responsible of all the web related aspects)<br/>
+        <strong>My role</strong>: Full-stack<br/>
         <strong>Back-end techs</strong>: Rails API, Resque, Devise, Paperclip, RailsAdmin, RSpec, Swagger,
         Postgresql, Redis<br/>
         <strong>Devops techs</strong>: AWS EC2, AWS S3, S3-fuse, Nginx, Unicorn, Capistrano, God.rb, Whenever, Let's Encrypt<br/>
-        <strong>Years</strong>: 2016 - current<br/>
+        <strong>Years</strong>: 2016 - Current<br/>
         <strong>Type</strong>: Professional<br/>
         <strong>Company</strong>: <a href="https://www.voctrolabs.com">Voctrolabs</a><br/>
         <strong>Links</strong>: <a href="https://cloud.voctrolabs.com/docs/api/index.html">API docs</a>
         ,&nbsp;<a href="https://www.voiceful.io/developers.html">Ask for access</a>
       </span>
     )
-  },  
+  },
+  {
+    title: 'Pronto',
+    image: pronto,
+    imageCentered: true,
+    filter: 'professional',
+    summary: 'Licensing hub for online music offering any rights owners an integrated one-stop shop solution',
+    description: (
+      <span>
+        <strong>Description</strong>:
+        Pronto digests reports from online music platforms (iTunes, Spotify, Amazon...)
+        and tells right owners (normally author societies like SGAE, SACEM...) which of their music has been
+        played / downloaded. Then it generates the reports to bill online music platforms.
+        <br/>
+        <strong>My role</strong>: Full-stack<br/>
+        <strong>Front-end Techs</strong>: Vue, Vuex, Vuetify, Apollo, GraphQL<br/>
+        <strong>Back-end Techs</strong>: Hasura, Python, Django, MongoDB, PostgreSQL<br/>
+        <strong>Devops Techs</strong>: AWS, Docker, Jenkins, Ansible<br/>
+        <strong>Years</strong>: 2019 - 2021<br/>
+        <strong>Type</strong>: Professional<br/>
+        <strong>Company</strong>: <a href="https://www.bmat.com/">BMAT</a><br/>
+        <strong>Links</strong>: <a href="https://pronto.bmat.com">Web</a> (private)
+      </span>
+    )
+  },
+  {
+    title: 'Travelsax',
+    image: travelsax,
+    imageCentered: true,
+    filter: 'professional',
+    summary: 'The smallest and lightest electronic sax in the world',
+    description: (
+      <span>
+        <strong>Description</strong>:
+        Travelsax is an electronic sax printed in 3D that mimics a conventional saxophone so musicians can 
+        practice anywhere. It can be played with the smartphone with its own app and sound or used as a midi 
+        controller with any compatible software on the computer, smartphone or tablet.
+        <br/>
+        <strong>My role</strong>: Develop the mobile app frontend and an automated process to create sample based 
+        instruments by processing audio recordings<br/>
+        <strong>Mobile app techs</strong>: React Native, Mobx, Serializr<br/>
+        <strong>Audio processing techs</strong>: Python, Essentia, Pydub, Librosa, Numpy<br/>
+        <strong>Year</strong>: 2019<br/>
+        <strong>Type</strong>: Professional<br/>
+        <strong>Company</strong>: <a href="https://odiseimusic.com/">Odiseimusic</a><br/>
+        <strong>Links</strong>: <a href="https://odiseimusic.com/travel-sax/">Web</a>, 
+        <a href="https://www.kickstarter.com/projects/travelsax/travel-sax-the-smallest-electronic-saxophone-in-th/">Kickstarter</a>
+      </span>
+    )
+  },
   {
     title: 'Voiceful Studio',
     image: voiceful_studio,
@@ -67,8 +144,8 @@ export default [
         Music technologies are run on a separate cloud webservice (Vocloud) in which I am also involved.
         <br/>
         <strong>My role</strong>: Full-stack (responsible of all the web related aspects)<br/>
+        <strong>Front-end techs</strong>: React (CRA), Mobx, Spraypaint.js, Reactstrap<br/>
         <strong>Back-end techs</strong>: Rails API, Graphiti-api, Devise, Active Storage, Postgresql<br/>
-        <strong>Front-end techs</strong>: Create-react-app, Mobx, Spraypaint.js, Reactstrap<br/>
         <strong>Devops techs</strong>: AWS EC2, AWS S3, Nginx, Puma, Capistrano, God.rb, Whenever, Let's Encrypt<br/>
         <strong>Years</strong>: 2018 - 2020<br/>
         <strong>Type</strong>: Professional<br/>
@@ -153,7 +230,7 @@ export default [
     image: armonia,
     imageCentered: true,
     filter: 'professional',
-    summary: 'Licensing hub for online music offering any rights owners an integrated one-stop shop solution.',
+    summary: 'Licensing hub for online music offering any rights owners an integrated one-stop shop solution',
     description: (
       <span>
         <strong>Description</strong>: Armonia digests reports from online music platforms (iTunes, Spotify, Amazon...)
@@ -493,7 +570,7 @@ export default [
         political ideas since I remember having some. I was excited when I understood the power that these new
         technologies where giving us and I could not miss the chance to collaborate.<br/>
         <strong>Techs</strong>: Linux, HiveOS, AMD GPUs, ETH, STORJ, SIA<br/>
-        <strong>Year</strong>: 2017 - current<br/>
+        <strong>Year</strong>: 2017 - 2022<br/>
         <strong>Type</strong>: Personal<br/>
       </span>
     )
